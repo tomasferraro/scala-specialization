@@ -1,0 +1,2 @@
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo /private/var/folders/zq/_6r0zzms3s7b6hqfcwbqkwvjyx8v03/T/sbt-structure.xml; session clear-all
+all {file:/Users/tferraro/coursera/progfun1/03_data-and-abstraction/01_data-and-abstraction/objsets/}root/products {file:/Users/tferraro/coursera/progfun1/03_data-and-abstraction/01_data-and-abstraction/objsets/}root/test:products

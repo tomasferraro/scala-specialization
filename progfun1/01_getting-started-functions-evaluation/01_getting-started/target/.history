@@ -1,0 +1,19 @@
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo /private/var/folders/zq/_6r0zzms3s7b6hqfcwbqkwvjyx8v03/T/sbt-structure1.xml; session clear-all
+test
+compile
+console
+val nums: List[Int] = List(1, 2, 3, 4) 
+console
+test
+console
+compile
+console
+compile
+test
+compile
+test
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo /private/var/folders/zq/_6r0zzms3s7b6hqfcwbqkwvjyx8v03/T/sbt-structure1.xml; session clear-all
+submit tomas.ferraro@mercadolibre.com VL45NxNZYVcAgf49 
+scala
+exit
+console
