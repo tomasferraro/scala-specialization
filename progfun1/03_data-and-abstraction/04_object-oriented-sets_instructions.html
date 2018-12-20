@@ -1,0 +1,191 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  <strong>
+   Note: If you have paid for the Certificate, please make sure you are submitting to the required assessment and not the optional assessment. If you mistakenly use the token from the wrong assignment, your grades will not appear
+  </strong>
+ </p>
+ <p>
+  Attention: You are allowed to submit
+  <strong>
+   an unlimited number of times
+  </strong>
+  for grade purposes. Once you have submitted your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
+ </p>
+ <p>
+  <a href="http://alaska.epfl.ch/~dockermoocs/progfun1/objsets.zip">
+   Download the objsets.zip
+  </a>
+  handout archive file.
+ </p>
+ <p>
+  In this assignment you will work with an object-oriented representations based on binary trees.
+ </p>
+ <h1 level="1">
+  Object-Oriented Sets
+ </h1>
+ <p>
+  For this part, you will earn credit by completing the TweetSet.scala file. This file defines an abstract class TweetSet with two concrete subclasses,Empty which represents an empty set, and NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet), which represents a non-empty set as a binary tree rooted at elem. The tweets are indexed by their text bodies: the bodies of all tweets on the left are lexicographically smaller than elem and all bodies of elements on the right are lexicographically greater.
+ </p>
+ <p>
+  Note also that these classes are
+  <em>
+   immutable
+  </em>
+  : the set-theoretic operations do not modify this but should return a new set.
+ </p>
+ <p>
+  Before tackling this assignment, we suggest you first study the already implemented methods contains and incl for inspiration.
+ </p>
+ <h2 level="2">
+  1 Filtering
+ </h2>
+ <p>
+  Implement filtering on tweet sets. Complete the stubs for the methods filter and filterAcc. filter takes as argument a function, the predicate, which takes a tweet and returns a boolean. filter then returns the subset of all the tweets in the original set for which the predicate is true. For example, the following call:
+ </p>
+ <pre language="scala">tweets.filter(tweet =&gt; tweet.retweets &gt; 10)</pre>
+ <p>
+  applied to a set tweets of two tweets, say, where the first tweet was not retweeted and the second tweet was retweeted 20 times should return a set containing only the second tweet.
+ </p>
+ <p>
+  Hint: start by defining the helper method filterAcc which takes an accumulator set as a second argument. This accumulator contains the ongoing result of the filtering.
+ </p>
+ <pre language="scala">/** This method takes a predicate and returns a subset of all the elements
+ *  in the original set for which the predicate is true.
+ */
+def filter(p: Tweet =&gt; Boolean): TweetSet
+def filterAcc(p: Tweet =&gt; Boolean, acc: TweetSet): TweetSet</pre>
+ <p>
+  The definition of filter in terms of filterAcc should then be straightforward.
+ </p>
+ <h2 level="2">
+  2 Taking Unions
+ </h2>
+ <p>
+  Implement union on tweet sets. Complete the stub for the method union. The method union takes another set that, and computes a
+  <em>
+   new
+  </em>
+  set which is the union of this and that, i.e. a set that contains exactly the elements that are
+  <em>
+   either
+  </em>
+  in this
+  <em>
+   or
+  </em>
+  in that,
+  <em>
+   or in both
+  </em>
+  .
+ </p>
+ <pre language="scala">def union(that: TweetSet): TweetSet</pre>
+ <p>
+  Note that in this exercise it is your task to find out in which class(es) to define the union method (should it be abstract in class TweetSet?).
+ </p>
+ <p>
+  <strong>
+   Warning : This method is a crucial part of the assignment. There are many ways to correctly code it, however some implementations run in an exponential time, so be careful, an inefficient implementation might result in a timeout during the grading process.
+  </strong>
+ </p>
+ <h2 level="2">
+  3 Sorting Tweets by Their Influence
+ </h2>
+ <p>
+  The more often a tweet is “re-tweeted” (that is, repeated by a different user with or without additions), the more influential it is.
+ </p>
+ <p>
+  The goal of this part of the exercise is to add a method descendingByRetweet to TweetSet which should produce a linear sequence of tweets (as an instance of class TweetList), ordered by their number of retweets:
+ </p>
+ <pre language="scala">def descendingByRetweet: TweetList</pre>
+ <p>
+  This method reflects a common pattern when transforming data structures. While traversing one data structure (in this case, a TweetSet), we’re building a second data structure (here, an instance of class TweetList). The idea is to start with the empty list Nil (containing no tweets), and to find the tweet with the most retweets in the input TweetSet. This tweet is removed from the TweetSet (that is, we obtain a new TweetSet that has all the tweets of the original set except for the tweet that was “removed”; this
+  <em>
+   immutable
+  </em>
+  set operation, remove, is already implemented for you), and added to the result list by creating a new Cons. After that, the process repeats itself, but now we are searching through a TweetSet with one less tweet.
+ </p>
+ <p>
+  Hint: start by implementing the method mostRetweeted which returns the most popular tweet of a TweetSet.
+ </p>
+ <h2 level="2">
+  4 Tying everything together
+ </h2>
+ <p>
+  In the last step of this assignment your task is to detect influential tweets in a set of recent tweets. We are providing you with a TweetSet containing several hundred tweets from popular tech news sites in the past few days, located in the TweetReader object (file “TweetReader.scala”).TweetReader.allTweets returns an instance of TweetSet containing a set of all available tweets.
+ </p>
+ <p>
+  Furthermore, you are given two lists of keywords. The first list corresponds to keywords associated with Google and Android smartphones, while the second list corresponds to keywords associated with Apple and iOS devices. Your objective is to detect which platform has generated more interest or activity in the past few days.
+ </p>
+ <p>
+  As a first step, use the functionality you implemented in the first parts of this assignment to create two different TweetSets, googleTweets andappleTweets. The first TweetSet, googleTweets, should contain all tweets that mention (in their “text”) one of the keywords in the google list. The second TweetSet, appleTweets, should contain all tweets that mention one of the keyword in the apple list. Their signature is as follows:
+ </p>
+ <pre language="scala">lazy val googleTweets: TweetSet
+lazy val appleTweets: TweetSet</pre>
+ <p>
+  Hint: use the exists method of List and contains method of classjava.lang.String.
+ </p>
+ <p>
+  From the
+  <em>
+   union
+  </em>
+  of those two TweetSets, produce trending, an instance of class TweetList representing a sequence of tweets ordered by their number of retweets:
+ </p>
+ <pre language="scala">lazy val trending: TweetList</pre>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

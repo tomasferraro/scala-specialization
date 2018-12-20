@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="01c6674b-2180-4e73-94c1-9dd97d873209" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/hydra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__junit_junit_4_10_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/libraries/sbt__org_scalatest_scalatest_2_11_2_2_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/modules/progfun1-funsets.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/modules/root-build.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/scala_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/assignment.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/CommonBuild.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/Courses.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/GradingFeedback.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/ScalaTestRunner.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/Settings.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/StudentBuild.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/StudentBuildLike.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/StyleChecker.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/buildSettings.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$0a6e8709c43c3881de77.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$1686215d9e4f4a54038c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$1c8a0377edd84e174d03.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$3282a461817b754d01fa.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$92e9fbcd4e21fa95ee8a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$c71010d44ab48843d1b7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/project/target/config-classes/$df62cad446dfd05b9db9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$1fe29b94faabc6bdfe0c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$62c4d928d31978a046b9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$7aa1e6e4b1357f6c2b22.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$965de32fb356d8836033.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$97719866eb5e5566b043.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$a335bfc4d9dbedf7d084.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$c00cc76085668125d601.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$cfda808c313aecb57986.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$df1c599052b23ef01111.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$e48ecd2ed6adc0392267.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/config-classes/$eaf594186ba62fbf28c0.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/classes/sbt/sbt.builds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/default/funsets-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/default/funsets-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-docs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-sources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-funsets-build-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/scala-2.10/sbt-0.13/resource_managed/main/sbt/sbt.builds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/project/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/scalastyle/scalastyle_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/common/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/funsets/FunSets.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/funsets/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/funsets/Video-5.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/funsets/Video.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/main/scala/funsets/practice.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/src/test/scala/funsets/FunSetSuite.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/$global/dumpStructureTo/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/clean/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/coursierArtifacts/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/coursierClassifiersArtifacts/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/coursierResolutions/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/test/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_higher-order-functions/01_higher-order-functions/target/streams/test/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/hydra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__junit_junit_4_10_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/libraries/sbt__org_scalatest_scalatest_2_11_2_2_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/modules/progfun1-objsets.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/modules/root-build.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/assignment.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/CommonBuild.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/Courses.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/GradingFeedback.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/ScalaTestRunner.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/Settings.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/StudentBuild.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/StudentBuildLike.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/StyleChecker.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/buildSettings.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$336ed849db3ead875930.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$3a3bbeb9b4f3cdafd69e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$4972fb89b5bdd462a563.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$9e34566d03bcae3b1bee.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$dc3de481e051bfa69ca6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$dd9c0debdbbb2174b9c5.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/project/target/config-classes/$f4397d8808baf52a6884.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$23371004346945ff603f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$336e091d5f8a9cfdab4f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$38a1b50109de167d189b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$4135c86d5a295e00c1d7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$4a1833dc556ac1f12e1b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$5d600be26968404bca4d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$6a06e78a6a90cccfc648.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$797b19f8fc19641ecc2a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$8af5fb0aac119bf0cd4d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/config-classes/$8d52e97c06c3fff05d82.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/classes/sbt/sbt.builds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/default/objsets-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/default/objsets-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-docs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-sources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-objsets-build-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/scala-2.10/sbt-0.13/resource_managed/main/sbt/sbt.builds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/project/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/scalastyle/scalastyle_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/src/main/scala/common/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/src/main/scala/objsets/TweetData.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/src/main/scala/objsets/TweetReader.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/src/main/scala/objsets/TweetSet.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/src/test/scala/objsets/TweetSetSuite.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/$global/dumpStructureTo/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/coursierArtifacts/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/coursierClassifiersArtifacts/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/coursierResolutions/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/$global/$global/definedTestNames/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/definedTests/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/loadedTestFrameworks/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_data-and-abstraction/01_data-and-abstraction/target/streams/test/unmanagedJars/$global/streams/export" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="881363380">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="sbt" value="1" />
+          <entry key="sc" value="1" />
+          <entry key="scala" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Scala" value="4" />
+          <entry key="sbt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Scala Console" value="13" />
+          <entry key="sbt" value="6" />
+          <entry key="sc" value="966" />
+          <entry key="scala" value="3282" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="4261" />
+          <entry key="sbt" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="253" column="7" lean-forward="true" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/common/package.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/patmat/HuffmanSuite.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="patmat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="patmat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="progfun1-patmat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="04_types-and-pattern-matching" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="ScalaTest.HuffmanSuite">
+    <configuration name="HuffmanSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="progfun1-patmat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patmat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patmat" />
+      <option name="MAIN_CLASS_NAME" value="patmat.HuffmanSuite" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patmat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="patmat" />
+      <option name="MAIN_CLASS_NAME" value="patmat.HuffmanSuite$TestTrees" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <patterns>
+        <pattern testClass="null" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
+      <module name="progfun1-patmat" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="progfun1-patmat" />
+      <setting name="path" value="patmat.HuffmanSuite" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="patmat.HuffmanSuite" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.null" />
+      <item itemvalue="ScalaTest.HuffmanSuite" />
+      <item itemvalue="JUnit.HuffmanSuite" />
+      <item itemvalue="Scala Console.Scala Console" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.HuffmanSuite" />
+        <item itemvalue="JUnit.HuffmanSuite" />
+        <item itemvalue="Scala Console.Scala Console" />
+        <item itemvalue="JUnit.null" />
+        <item itemvalue="JUnit.null" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="progfun1-patmat" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="root [file:/Users/tferraro/coursera/exercices/progfun1/04_types-and-pattern-matching/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="root-build [file:/Users/tferraro/coursera/exercices/progfun1/04_types-and-pattern-matching/]" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="18530266394000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="11460821" />
+        <entry key="$PROJECT_DIR$/project/CommonBuild.scala" value="2571602370" />
+        <entry key="$PROJECT_DIR$/project/Courses.scala" value="3825051450" />
+        <entry key="$PROJECT_DIR$/project/GradingFeedback.scala" value="647646337" />
+        <entry key="$PROJECT_DIR$/project/ScalaTestRunner.scala" value="1073251015" />
+        <entry key="$PROJECT_DIR$/project/Settings.scala" value="3896389775" />
+        <entry key="$PROJECT_DIR$/project/StudentBuild.scala" value="2270748580" />
+        <entry key="$PROJECT_DIR$/project/StudentBuildLike.scala" value="1951503120" />
+        <entry key="$PROJECT_DIR$/project/StyleChecker.scala" value="3016454982" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1075804536" />
+        <entry key="$PROJECT_DIR$/project/buildSettings.sbt" value="2557134551" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2764601182" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../../progfun1/01_getting-started-functions-evaluation/01_getting-started/example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../progfun1/01_getting-started-functions-evaluation/02_functions-evaluation/recfun" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../progfun1/02_higher-order-functions/01_higher-order-functions/funsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../progfun1/03_data-and-abstraction/01_data-and-abstraction/objsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../progfun1/Example" value="PREVIEW" />
+        <entry key="$USER_HOME$/dev/extractor" value="PREVIEW" />
+        <entry key="$USER_HOME$/dev/male-fraud-nodes" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01c6674b-2180-4e73-94c1-9dd97d873209" name="Default Changelist" comment="" />
+      <created>1544102060254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544102060254</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 17m 19s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 18m 08s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 18m 20s.xml">
+      <configuration name="HuffmanSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 20m 27s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 20m 33s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 21m 36s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 21m 56s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 10h 26m 29s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 11h 21m 25s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite - 2018.12.20 at 11h 21m 49s.xml">
+      <configuration name="HuffmanSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" weight="0.27951807" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="sbt" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>chars(subtree.asInstanceOf[Fork].right).contains(char)</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>chars(subtree.asInstanceOf[Fork].left).contains(char)</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>chars(l).contains(char)</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/HuffmanSuite.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/common/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="253" column="7" lean-forward="true" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>progfun1-patmat</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sbt: junit:junit:4.10:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

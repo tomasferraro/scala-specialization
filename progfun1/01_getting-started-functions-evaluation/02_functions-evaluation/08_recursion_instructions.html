@@ -1,0 +1,200 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  <strong>
+   Note: If you have paid for the Certificate, please make sure you are submitting to the required assessment and not the optional assessment. If you mistakenly use the token from the wrong assignment, your grades will not appear
+  </strong>
+ </p>
+ <p>
+  Attention: You are allowed to submit
+  <strong>
+   a unlimited number of times
+  </strong>
+  for grade purposes. Once you have submitted your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
+ </p>
+ <h1 level="1">
+  Mechanics
+ </h1>
+ <p>
+  <a href="http://alaska.epfl.ch/~dockermoocs/progfun1/recfun.zip">
+   Download the recfun.zip
+  </a>
+  handout archive file and extract it somewhere on your machine.
+ </p>
+ <p>
+  This assignment counts towards your final grade. Please refer to the Grading Policy for more details.
+ </p>
+ <p>
+  Do not forget to submit your work using the submit task from SBT. Please refer to the example assignment for instructions.
+ </p>
+ <h1 level="1">
+  Exercise 1: Pascal’s Triangle
+ </h1>
+ <p>
+  The following pattern of numbers is called
+  <em>
+   Pascal’s triangle
+  </em>
+  .
+ </p>
+ <pre language="plain_text">    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+   ...</pre>
+ <p>
+  The numbers at the edge of the triangle are all 1, and each number inside the triangle is the sum of the two numbers above it. Write a function that computes the elements of Pascal’s triangle by means of a recursive process.
+ </p>
+ <p>
+  Do this exercise by implementing the pascal function in Main.scala, which takes a column c and a row r, counting from 0 and returns the number at that spot in the triangle. For example, pascal(0,2)=1,pascal(1,2)=2 and pascal(1,3)=3.
+ </p>
+ <pre language="scala">def pascal(c: Int, r: Int): Int</pre>
+ <h1 level="1">
+  Exercise 2: Parentheses Balancing
+ </h1>
+ <p>
+  Write a recursive function which verifies the balancing of parentheses in a string, which we represent as a List[Char] not a String. For example, the function should return true for the following strings:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    (if (zero? x) max (/ 1 x))
+   </p>
+  </li>
+  <li>
+   <p>
+    I told him (that it’s not (yet) done). (But he wasn’t listening)
+   </p>
+  </li>
+ </ul>
+ <p>
+  The function should return false for the following strings:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    :-)
+   </p>
+  </li>
+  <li>
+   <p>
+    ())(
+   </p>
+  </li>
+ </ul>
+ <p>
+ </p>
+ <p>
+  The last example shows that it’s not enough to verify that a string contains the same number of opening and closing parentheses.
+ </p>
+ <p>
+  Do this exercise by implementing the balance function in Main.scala. Its signature is as follows:
+ </p>
+ <pre language="scala">def balance(chars: List[Char]): Boolean</pre>
+ <p>
+  There are three methods on List[Char] that are useful for this exercise:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    chars.isEmpty: Boolean returns whether a list is empty
+   </p>
+  </li>
+  <li>
+   <p>
+    chars.head: Char returns the first element of the list
+   </p>
+  </li>
+  <li>
+   <p>
+    chars.tail: List[Char] returns the list without the first element
+   </p>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Hint
+  </strong>
+  : you can define an inner function if you need to pass extra parameters to your function.
+ </p>
+ <p>
+  <strong>
+   Testing
+  </strong>
+  : You can use the toList method to convert from a String to aList[Char]: e.g. "(just an) example".toList.
+ </p>
+ <h1 level="1">
+  Exercise 3: Counting Change
+ </h1>
+ <p>
+  Write a recursive function that counts how many different ways you can make change for an amount, given a list of coin denominations. For example, there are 3 ways to give change for 4 if you have coins with denomination 1 and 2: 1+1+1+1, 1+1+2, 2+2.
+ </p>
+ <p>
+  Do this exercise by implementing the countChange function inMain.scala. This function takes an amount to change, and a list of unique denominations for the coins. Its signature is as follows:
+ </p>
+ <pre language="scala">def countChange(money: Int, coins: List[Int]): Int</pre>
+ <p>
+  Once again, you can make use of functions isEmpty, head and tail on the list of integers coins.
+ </p>
+ <p>
+  <strong>
+   Hint
+  </strong>
+  : Think of the degenerate cases. How many ways can you give change for 0 CHF(swiss money)? How many ways can you give change for &gt;0 CHF, if you have no coins?
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

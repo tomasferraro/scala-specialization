@@ -1,0 +1,321 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  Attention: You are allowed to submit
+  <strong>
+   an unlimited number of times
+  </strong>
+  . Once you have submitted your solution, you should see your grade and feedback about your code under the "My Submission" tab above, within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all of your submissions will count as the final grade.
+  <strong>
+   (This assignment does not count towards your grade anyways, its just to teach you the workflow for submitting assignments, but this is the policy for all other assignments. However, you'll need to implement some trivial methods in order to pass the tests.)
+  </strong>
+ </p>
+ <h1 level="1">
+  Getting Started!
+ </h1>
+ <p>
+  The goal of this assignment is to familiarize yourself with the infrastructure and the tools required during this class. Even though the grade in this assignment will be excluded from your final grade for the course, it is important that you work through this assignment carefully.
+ </p>
+ <h2 level="2">
+  Installing Required Tools
+ </h2>
+ <p>
+  Before anything else,
+  <em>
+   it is most important that you make sure that all tools are correctly installed.
+  </em>
+  Take a very careful look at the Tools Setup page and verify that all of the listed tools work on your machine.
+ </p>
+ <h1 level="1">
+  The Assignment
+ </h1>
+ <h2 level="2">
+  Part 1: Obtain the Project Files
+ </h2>
+ <p>
+  <a href="http://alaska.epfl.ch/~dockermoocs/progfun1/example.zip">
+   Download the example.zip
+  </a>
+  handout archive file and extract it somewhere on your machine.
+ </p>
+ <h2 level="2">
+  Part 2: Using the Scala REPL
+ </h2>
+ <p>
+  During this class we will always launch the Scala REPL (the interactive Scala console) through sbt. This way you don't need to install the Scala distribution on your machine, having sbt is enough. (In case you prefer to have the
+  <strong>
+   scala
+  </strong>
+  command available on your machine, you can download the Scala distribution from the
+  <a href="http://www.scala-lang.org/downloads">
+   scala-lang.org website
+  </a>
+  .)
+ </p>
+ <p>
+  Open the
+  <a href="https://www.coursera.org/learn/progfun1/supplement/uV974/sbt-tutorial">
+   Sbt Tutorial
+  </a>
+  page and follow the first steps until Running the Scala Interpreter. Note that sbt can only be started inside a project directory, so first navigate to the project directory that you created in Part 1.
+ </p>
+ <p>
+  Enter a few Scala expressions to make sure everything is working as expected.
+ </p>
+ <h2 level="2">
+  Part 3: Opening the Project in Intellij
+ </h2>
+ <p>
+  To work on the source code of the project, you have to import it into Intellij. Follow the description on the Tools Setup page and make sure to import the project as a sbt project. Then, have a first look at the source code. In the folder
+  <strong>
+   src/main/scala
+  </strong>
+  , open the package
+  <strong>
+   example
+  </strong>
+  and double-click the file
+  <strong>
+   Lists.scala
+  </strong>
+  .
+ </p>
+ <p>
+  If you run the tests right away, they will fail. Implement two methods (sum and max).
+ </p>
+ <p>
+  When working on an assignment,
+  <em>
+   it is important that you don't change any
+   <strong>
+    already implemented
+   </strong>
+   method, class or object names or types
+  </em>
+  . Doing so will prevent our automated grading tools from working and you have a
+  <em>
+   high risk of not obtaining any points
+  </em>
+  for your solution.
+ </p>
+ <h2 level="2">
+  Part 4: Running your Code
+ </h2>
+ <p>
+  Once you start writing some code, you might want to run your code on a few examples to see if it works correctly. We present two possibilities to run the methods you implemented.
+ </p>
+ <h3 level="3">
+  Using the Scala REPL
+ </h3>
+ <p>
+  In the sbt console, start the Scala REPL by typing
+  <strong>
+   console
+  </strong>
+  .
+ </p>
+ <pre language="sh">&gt; console
+[info] Starting scala interpreter...
+
+scala&gt;</pre>
+ <p>
+  The classes of the assignment are available inside the REPL, so you can for instance import all the methods from object
+  <strong>
+   Lists:
+  </strong>
+ </p>
+ <pre language="sh">scala&gt; import example.Lists._
+import example.Lists._
+
+scala&gt; max(List(1,3,2))
+res1: Int = 3</pre>
+ <h3 level="3">
+  Using a Main Object
+ </h3>
+ <p>
+  Another way to run your code is to create a new
+  <strong>
+   Main
+  </strong>
+  object that can be executed by the Java Virtual Machine.
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    In eclipse, right-click on the package example in
+    <strong>
+     src/main/scala
+    </strong>
+    and select “New” - “Scala Object”
+   </p>
+  </li>
+  <li>
+   <p>
+    Use Main as the object name (any other name would also work)
+   </p>
+  </li>
+  <li>
+   <p>
+    Confirm by clicking “Finish”
+   </p>
+  </li>
+ </ol>
+ <p>
+  In order to make the object executable it has to extend the type
+  <strong>
+   App
+  </strong>
+  . Change the object definition to the following:
+ </p>
+ <pre language="scala">object Main extends App {
+  println(Lists.max(List(1,3,2)))
+}</pre>
+ <p>
+  Now the
+  <strong>
+   Main
+  </strong>
+  object can be executed. In order to do so in eclipse:
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    Right-click on the file
+    <strong>
+     Main.scala
+    </strong>
+   </p>
+  </li>
+  <li>
+   <p>
+    Select “Run As” - “Scala Application”
+   </p>
+  </li>
+ </ol>
+ <p>
+  You can also run the
+  <strong>
+   Main
+  </strong>
+  object in the sbt console by simply using the command
+  <strong>
+   run.
+  </strong>
+ </p>
+ <h2 level="2">
+  Part 5: Writing Tests
+ </h2>
+ <p>
+  Throughout the assignments of this course we will require you to write unit tests for the code that you write. Unit tests are the preferred way to test your code because unlike REPL commands, unit tests are saved and can be re-executed as often as required. This is a great way to make sure that nothing breaks when you have go back later to change some code that you wrote earlier on.
+ </p>
+ <p>
+  We will be using the ScalaTest testing framework to write our unit tests. In eclipse, navigate to the folder
+  <strong>
+   src/test/scala
+  </strong>
+  and open the file
+  <strong>
+   ListsSuite.scala
+  </strong>
+  in package example. This file contains a step-by-step tutorial to learn how to write and execute ScalaTest unit tests.
+ </p>
+ <h2 level="2">
+  Part 6: Submitting your Solution
+ </h2>
+ <p>
+  Once you implemented all the required methods and tested you code thoroughly, you can submit it to Coursera. The only way to submit your solution is through sbt, so you need to start
+  <strong>
+   sbt
+  </strong>
+  in your project directory.
+ </p>
+ <p>
+  <strong>
+   Warning
+  </strong>
+  : Make sure that you run sbt in the root folder of the project (where the build.sbt file is).
+ </p>
+ <p>
+  <strong>
+   Warning
+  </strong>
+  : Make sure that the console line is `&gt;` and not `scala&gt;`. Otherwise, you're inside the Scala console and not SBT (check the SBT tutorial).
+ </p>
+ <p>
+  In order to submit, you need to have your coursera username and your submission password.
+  <strong>
+   Note that the submission password is NOT your login password
+  </strong>
+  , instead it is a special password generated by Coursera.
+ </p>
+ <p>
+  Submitting in sbt is simply done by invoking the submit task:
+ </p>
+ <pre language="sh">&gt; submit your.email@domain.com submissionPassword
+[info] Connecting to coursera. Obtaining challenge...
+[info] Computing challenge response...
+[info] Submitting solution...
+[success] Your code was successfully submitted: Your submission has been accepted and will be graded shortly.
+[success] Total time: 2 s, completed Aug 30, 2012 4:30:10 PM
+&gt; </pre>
+ <p>
+  You are allowed to
+  <strong>
+   resubmit an unlimited number of times
+  </strong>
+  ! Once you submit your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
+ </p>
+ <p>
+  <a href="https://www.coursera.org/learn/progfun1/supplement/uV974/sbt-tutorial-and-submission-of-assignments-please-read">
+   More information about SBT can be found here.
+  </a>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

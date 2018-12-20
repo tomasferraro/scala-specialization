@@ -1,0 +1,254 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  <strong>
+   Note: If you have paid for the Certificate, please make sure you are submitting to the required assessment and not the optional assessment. If you mistakenly use the token from the wrong assignment, your grades will not appear
+  </strong>
+ </p>
+ <p>
+  Attention: You are allowed to submit
+  <strong>
+   an unlimited number of times
+  </strong>
+  for grade purposes. Once you have submitted your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
+ </p>
+ <p>
+  In this assignment, you will work with a functional representation of sets based on the mathematical notion of characteristic functions. The goal is to gain practice with higher-order functions.
+ </p>
+ <p>
+  <a href="http://alaska.epfl.ch/~dockermoocs/progfun1/funsets.zip">
+   Download the funsets.zip
+  </a>
+  handout archive file and extract it somewhere on your machine. Write your solutions by completing the stubs in theFunSets.scala file.
+ </p>
+ <p>
+  Write your own tests! For this assignment, we don’t give you tests but instead the FunSetSuite.scala file contains hints on how to write your own tests for the assignment.
+ </p>
+ <h2 level="2">
+  Representation
+ </h2>
+ <p>
+  We will work with sets of integers.
+ </p>
+ <p>
+  As an example to motivate our representation, how would you represent the set of all negative integers? You cannot list them all… one way would be so say: if you give me an integer, I can tell you whether it’s in the set or not: for 3, I say ‘no’; for -1, I say yes.
+ </p>
+ <p>
+  Mathematically, we call the function which takes an integer as argument and which returns a boolean indicating whether the given integer belongs to a set, the
+  <em>
+   characteristic
+  </em>
+  function of the set. For example, we can characterize the set of negative integers by the characteristic function (x: Int) =&gt; x &lt; 0.
+ </p>
+ <p>
+  Therefore, we choose to represent a set by its characteristic function and define a type alias for this representation:
+ </p>
+ <pre language="scala">type Set = Int =&gt; Boolean</pre>
+ <p>
+  Using this representation, we define a function that tests for the presence of a value in a set:
+ </p>
+ <pre language="scala">def contains(s: Set, elem: Int): Boolean = s(elem)</pre>
+ <h2 level="2">
+  2.1 Basic Functions on Sets
+ </h2>
+ <p>
+  Let’s start by implementing basic functions on sets.
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    Define a function
+    <strong>
+     singletonSet
+    </strong>
+    which creates a singleton set from one integer value: the set represents the set of the one given element. Now that we have a way to create singleton sets, we want to define a function that allow us to build bigger sets from smaller ones.
+   </p>
+  </li>
+  <li>
+   <p>
+    Define the functions
+    <strong>
+     union
+    </strong>
+    ,
+    <strong>
+     intersect
+    </strong>
+    , and
+    <strong>
+     diff
+    </strong>
+    , which takes two sets, and return, respectively, their union, intersection and differences.
+    <strong>
+     diff(s, t)
+    </strong>
+    returns a set which contains all the elements of the set
+    <em>
+     <strong>
+      s
+     </strong>
+    </em>
+    that are not in the set
+    <em>
+     <strong>
+      t
+     </strong>
+    </em>
+    .
+   </p>
+  </li>
+  <li>
+   <p>
+    Define the function
+    <strong>
+     filter
+    </strong>
+    which selects only the elements of a set that are accepted by a given predicate
+    <em>
+     p
+    </em>
+    . The filtered elements are returned as a new set.
+   </p>
+  </li>
+ </ol>
+ <h2 level="2">
+  2.2 Queries and Transformations on Sets
+ </h2>
+ <p>
+  In this part, we are interested in functions used to make requests on elements of a set. The first function tests whether a given predicate is true for all elements of the set. This forall function has the following signature:
+ </p>
+ <pre language="scala">def forall(s: Set, p: Int =&gt; Boolean): Boolean</pre>
+ <p>
+  Note that there is no direct way to find which elements are in a set.
+  <em>
+   contains
+  </em>
+  only allows to know whether a given element is included. Thus, if we wish to do something to all elements of a set, then we have to iterate over all integers, testing each time whether it is included in the set, and if so, to do something with it. Here, we consider that an integer x has the property -1000 &lt;= x &lt;= 1000 in order to limit the search space.
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    Implement
+    <strong>
+     forall
+    </strong>
+    using linear recursion. For this, use a helper function nested inforall.
+   </p>
+  </li>
+  <li>
+   <p>
+    Using
+    <strong>
+     forall
+    </strong>
+    , implement a function
+    <strong>
+     exists
+    </strong>
+    which tests whether a set contains at least one element for which the given predicate is true. Note that the functions
+    <strong>
+     forall
+    </strong>
+    and
+    <strong>
+     exists
+    </strong>
+    behave like the universal and existential quantifiers of first-order logic.
+   </p>
+  </li>
+  <li>
+   <p>
+    Finally, write a function
+    <strong>
+     map
+    </strong>
+    which transforms a given set into another one by applying to each of its elements the given function.
+   </p>
+  </li>
+ </ol>
+ <h2 level="2">
+  Extra Hints
+ </h2>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Be attentive in the video lectures on how to write anonymous functions in Scala.
+   </p>
+  </li>
+  <li>
+   <p>
+    Sets are represented as functions. Think about what it
+    <em>
+     means
+    </em>
+    for an element to belong to a set, in terms of function evaluation. For example, how do you represent a set that contains all numbers between 1 and 100?
+   </p>
+  </li>
+  <li>
+   <p>
+    Most of the solutions for this assignment can be written as one-liners. If you have more, you probably need to rethink your solution. In other words, this assignment needs more thinking (whiteboard, pen and paper) than coding ;-).
+   </p>
+  </li>
+  <li>
+   <p>
+    If you are having some trouble with terminology, have a look at the
+    <a href="http://docs.scala-lang.org/glossary/">
+     glossary
+    </a>
+    .
+   </p>
+  </li>
+ </ul>
+ <p>
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
